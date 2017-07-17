@@ -1,0 +1,58 @@
+<view class="container">
+  
+  <view class="search">
+    <input placeholder="搜索" />
+  </view>
+
+  <view class="section">
+    
+    <view class="header">
+      <text class="title">近期上映</text>
+      <text class="more">更多></text>
+    </view>
+
+    <view class="main">
+        <scroll-view class="main_scrollView"  scroll-x="{{bool_true}}">          
+          <view class="move_content" wx:for="{{moveSubjects}}">
+            <image class="move_img" src="{{item.img}}"></image>
+            <text class="move_title">{{item.nm}}</text>
+            <text class="move_score">评分：{{item.sc}}</text>
+          </view>
+        </scroll-view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="header">
+      <text class="title">电视剧</text>
+      <text class="more">更多></text>
+    </view>
+
+    <view class="main">
+        <scroll-view class="main_scrollView"  scroll-x="{{bool_true}}">          
+          <view class="move_content" wx:for="{{moveSubjects}}">
+            <image class="move_img" src="{{item.img}}"></image>
+            <text class="move_title">{{item.nm}}</text>
+            <text class="move_score">评分：{{item.sc}}</text>
+          </view>
+        </scroll-view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="header">
+      <text class="title">综艺</text>
+      <text class="more">更多></text>
+    </view>
+
+    <view class="main">
+        <scroll-view class="main_scrollView"  scroll-x="{{bool_true}}">          
+          <view class="move_content" wx:for="{{moveSubjects}}">
+            <image class="move_img" src="{{item.img}}"></image>
+            <text class="move_title">{{item.nm}}</text>
+            <text class="move_score">评分：{{item.sc}}</text>
+          </view>
+        </scroll-view>
+    </view>
+  </view>
+</view>
